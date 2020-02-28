@@ -25,3 +25,13 @@ $(".top-box").on("click", ".search-button", function () {
         }
     });
 });
+
+$(".create").on("click", function () {
+    var buttonElement = $("<button>");
+    var dataText = document.getElementById("input").value;
+    // var dataText = $("#input").value;   **not sure why this doesn't work**
+    buttonElement.attr("class", "search-button");
+    buttonElement.attr("data-text", dataText);
+    buttonElement.html(dataText);
+    $(".top-box").append(buttonElement);
+});
