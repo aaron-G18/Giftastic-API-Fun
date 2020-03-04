@@ -52,6 +52,10 @@ button {
     background-color: #1F2024;
 }
 
+.search-button {
+    margin-bottom: 10px;
+}
+
 .content {
     margin-left: 20px;
     max-width: 65%;
