@@ -1,10 +1,12 @@
 body {
-    background-color: teal;
+    background-color: #34363A;
+    min-width: 540px;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 28px;
 }
 
 h2 {
@@ -22,6 +24,15 @@ li {
 
 p {
     margin-bottom: 5px;
+    color: black;
+}
+
+button {
+    cursor: pointer;
+}
+
+.title {
+    color: white;
 }
 
 .do-it {
@@ -34,11 +45,11 @@ p {
 }
 
 .top-box {
-    min-height: 100px;
+    min-height: 40px;
     margin: 20px;
     padding: 10px;
     border: 1px solid white;
-    background-color: lightblue;
+    background-color: #1F2024;
 }
 
 .content {
@@ -48,7 +59,8 @@ p {
 
 .content-container {
     float: left;
-    max-width: 65%;
+    max-width: 60%;
+    margin-left: 10px;
 }
 
 .entry {
@@ -56,6 +68,11 @@ p {
     float: right;
     max-width: 28%;
     height: 100px;
+    padding-left: 20px;
+}
+
+.create-button {
+    text-decoration: underline;
 }
 
 .create {
@@ -71,4 +88,14 @@ p {
     padding: 5px;
     border: 1px solid black;
     background-color: white;
+}
+
+.more-button {
+    float: left;
+    width: 200px;
+    height: 40px;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
 }
