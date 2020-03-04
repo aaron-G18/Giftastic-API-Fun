@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+  // click function for getting gifs and appending them to the DOM from clicking on buttons in the top of the page.
   $(".top-box").on("click", ".search-button", function () {
     $(".content-container").empty();
     var search = $(this).attr("data-text");
@@ -14,7 +15,6 @@ $(document).ready(function () {
       method: "GET"
     }).then(function (response) {
       var results = response.data;
-
       for (var i = 0; i < 10; i++) {
         var gifDiv = $("<div>");
         var rating = results[i].rating;
@@ -35,11 +35,11 @@ $(document).ready(function () {
       moreButton.attr("class", "more-button");
       moreButton.attr("data-query", queryURL);
       moreButton.text("Want 10 more?");
-
       $(".content-container").append(moreButton);
     });
   });
 
+  // Click function for creating a new button with the user's entry and append to the top button container.
   $(".create").on("click", function () {
     var buttonElement = $("<button>");
     var dataText = document.getElementById("input").value.trim();
@@ -50,6 +50,7 @@ $(document).ready(function () {
     $(".top-box").append(buttonElement);
   });
 
+  // Click function on images to animate and stop gifs.
   $(".content-container").on("click", "img", function () {
     var state = $(this).attr("data-state");
     if (state === "still") {
@@ -61,6 +62,7 @@ $(document).ready(function () {
     };
   });
 
+  // Click funtion for the more button to append 10 more gifs to the DOM.
   $(".content-container").on("click", ".more-button", function () {
     var queryURL = $(this).attr("data-query");
     // set css to remove the "more button".
@@ -73,7 +75,6 @@ $(document).ready(function () {
       method: "GET"
     }).then(function (response) {
       var results = response.data;
-
       for (var i = 10; i < 20; i++) {
         var gifDiv = $("<div>");
         var rating = results[i].rating;
@@ -93,6 +94,4 @@ $(document).ready(function () {
       };
     });
   });
-
-
 });
