@@ -21,6 +21,7 @@ $(document).ready(function () {
         var p = $("<p>").text("Rating: " + rating);
         var gifImage = $("<img>");
         gifDiv.attr("class", "thumbnail");
+        p.attr("class", "rating");
         gifImage.attr("src", results[i].images.fixed_height_small_still.url);
         gifImage.attr(
           "data-still",
@@ -79,6 +80,7 @@ $(document).ready(function () {
         var gifDiv = $("<div>");
         var rating = results[i].rating;
         var p = $("<p>").text("Rating: " + rating);
+        p.attr("class", "rating");
         var gifImage = $("<img>");
         gifDiv.attr("class", "thumbnail");
         gifImage.attr("src", results[i].images.fixed_height_small_still.url);

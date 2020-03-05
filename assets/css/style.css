@@ -1,8 +1,14 @@
 body {
     background-color: #34363A;
+    background-image: url(../images/film.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-width: 540px;
+    min-height: 600px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 h1 {
@@ -92,6 +98,10 @@ button {
     padding: 5px;
     border: 1px solid black;
     background-color: white;
+}
+
+.rating {
+    text-shadow: none;
 }
 
 .more-button {
