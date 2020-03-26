@@ -4,3 +4,5 @@ Here is a gif search page that utilizes GIPHY's API to pull gifs and show them t
 
 Link to deployed page:
 https://aaron-g18.github.io/Giftastic-API-Fun/
+
+In this project I used HTML, CSS, JavaScript, Jquery, and AJAX to query the Giphy API.
